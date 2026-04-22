@@ -19,56 +19,6 @@ The **Off-Road Champions (ORC) Blockchain Update** modernizes the existing ORC g
 
 ---
 
-## ✅ Deployment Checklist
-
-- [ ] Clone this repository (see [Installation](#-installation--setup))
-- [ ] Install all required dependencies (Node.js, npm packages)
-- [ ] Configure environment variables (`.env` — see [Environment Variables](#environment-variables))
-- [ ] Set up Immutable SDK credentials (Immutable Developer Hub)
-- [ ] Set up Stripe API keys (Stripe Dashboard)
-- [ ] Connect or configure the database (schema in `/database`)
-- [ ] Run the backend server and verify API routes respond
-- [ ] Open the WebGL build in a browser and verify game loads
-- [ ] Test a wallet connection end-to-end
-- [ ] Test a Stripe payment flow in test mode
-- [ ] Confirm NFT minting and ownership transfer works
-- [ ] Review the [User Guide](#-user-guide) for ongoing maintenance notes
-
----
-
-## 🗂️ Repository Structure
-
-```
-orc-blockchain-update/
-│
-├── README.md                  ← You are here
-│
-├── /blockchain                ← Immutable SDK integration, NFT logic
-│   └── (upload your files)
-│
-├── /payments                  ← Stripe integration, payment routes
-│   └── (upload your files)
-│
-├── /backend                   ← Node.js / Express server
-│   └── (upload your files)
-│
-├── /frontend                  ← Next.js / React pages (wallet, leaderboard, UI)
-│   └── (upload your files)
-│
-├── /webgl-build               ← Unity WebGL build output
-│   └── (upload your files)
-│
-├── /database                  ← DB schema, migrations, seed data
-│   └── (upload your files)
-│
-└── /docs                      ← Any additional documentation, diagrams, reports
-    └── (upload your files)
-```
-
-> **For teammates:** Drop your work into the relevant folder above. If your work spans multiple folders, use your judgment or add a sub-folder. Commit with a clear message describing what you added.
-
----
-
 ## ⚙️ Installation & Setup
 
 ### Prerequisites
@@ -186,25 +136,3 @@ Simply open `webgl-build/index.html` in a modern browser (Chrome or Firefox reco
 | **Buying Items** | Stripe checkout handles payment; on success, an NFT is minted to the player's wallet |
 | **Leaderboard** | Auto-updated based on game results stored in the database |
 | **WebGL Game** | Playable in-browser; connects to the backend for account and inventory data |
-
----
-
-## 🤝 Support & Point of Contact
-
-For questions about this codebase after project handoff, reach out to any team member:
-
-| Name | Role | Contact |
-|------|------|---------|
-| Ninos Toma | Team Member | — |
-| Abdullah Alghabban | Team Member | — |
-| John Li | Team Member | — |
-| Ethan Peterson | Team Member | — |
-| Shiven Shekar | Team Member | — |
-
-> **Teammates:** Fill in your preferred contact info (email or GitHub handle) before final submission.
-
----
-
-## 📄 License
-
-This project was developed as a capstone project for Arizona State University and is intended for use by the sponsor, Obi Onyejekwe. All rights to the Off-Road Champions game and brand belong to the sponsor.
